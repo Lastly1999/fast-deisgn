@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/fast-ui.iml" filepath="$PROJECT_DIR$/.idea/fast-ui.iml" />
+      <module fileurl="file://D:/privateProject/fast-ui-press/.idea/fast-ui-press.iml" filepath="D:/privateProject/fast-ui-press/.idea/fast-ui-press.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json",
+  "framework": "vue",
+  "version": "1.0.0",
+  "name": "Fast UI",
+  "contributions": {
+    "html": {
+      "tags": [
+        {
+          "name": "b-button",
+          "attributes": [
+            {
+              "name": "color",
+              "description": "按钮颜色",
+              "default": "default",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击按钮时触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "default",
+              "description": "按钮内容"
+            }
+          ]
+        }
+      ],
+      "types-syntax": "typescript"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "b-button/color": {
+    "type": "string",
+    "description": "按钮颜色 默认值：default"
+  }
+}
