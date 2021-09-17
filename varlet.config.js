@@ -1,18 +1,18 @@
 module.exports = {
-  name: 'FastUI',
+  name: 'FastDesign',
   namespace: 'b',
-  title: 'Fast UI',
-  logo: './logo.svg',
+  title: 'FastDesign',
+  logo: './logo_big.png',
   useMobile: true,
   themes: {
-    'color-primary': '#0c64eb',
+    'color-primary': '#1d92e9',
     'color-link': '#3a7afe',
-    'color-type': '#0c64eb',
-    'color-progress': '#009688',
-    'color-side-bar': '#0c64eb',
-    'color-side-bar-active-background': '#c8daff',
-    'color-app-bar': '#009688',
-    'color-mobile-cell-hover': '#009688',
+    'color-type': '#1d92e9',
+    'color-progress': '#1d92e9',
+    'color-side-bar': '#1d92e9',
+    'color-side-bar-active-background': 'rgba(203,220,255,0.46)',
+    'color-app-bar': '#1d92e9',
+    'color-mobile-cell-hover': '#1d92e9',
     'color-mobile-cell-hover-background': '#fff',
   },
   highlight: {
@@ -21,7 +21,7 @@ module.exports = {
   pc: {
     redirect: '/home',
     title: {
-      'zh-CN': 'Fast UI',
+      'zh-CN': 'FastDesign',
     },
     header: {
       i18n: null,

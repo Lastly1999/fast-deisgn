@@ -1,10 +1,10 @@
 {
-  "name": "FastUI",
+  "name": "FastDesign",
   "namespace": "b",
   "host": "localhost",
   "port": 8080,
-  "title": "Fast UI",
-  "logo": "./logo.svg",
+  "title": "FastDesign",
+  "logo": "./logo_big.png",
   "defaultLanguage": "zh-CN",
   "highlight": {
     "style": "./highlight.css"
@@ -44,7 +44,7 @@
     ],
     "redirect": "/home",
     "title": {
-      "zh-CN": "Fast UI",
+      "zh-CN": "FastDesign",
       "en-US": "Material design mobile components built for Vue3"
     },
     "header": {
@@ -63,16 +63,16 @@
     }
   },
   "themes": {
-    "color-primary": "#0c64eb",
+    "color-primary": "#1d92e9",
     "color-link": "#3a7afe",
-    "color-type": "#0c64eb",
-    "color-progress": "#009688",
+    "color-type": "#1d92e9",
+    "color-progress": "#1d92e9",
     "color-pc-language-active": "#3a7afe",
     "color-pc-language-active-background": "#edf5ff",
-    "color-side-bar": "#0c64eb",
-    "color-side-bar-active-background": "#c8daff",
-    "color-app-bar": "#009688",
-    "color-mobile-cell-hover": "#009688",
+    "color-side-bar": "#1d92e9",
+    "color-side-bar-active-background": "rgba(203,220,255,0.46)",
+    "color-app-bar": "#1d92e9",
+    "color-mobile-cell-hover": "#1d92e9",
     "color-mobile-cell-hover-background": "#fff",
     "color-mobile-language-active": "#3a7afe",
     "color-mobile-language-active-background": "#edf5ff"
