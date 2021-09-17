@@ -38,7 +38,7 @@ export default defineComponent({
         return {
             buttonDefault: props.type === 'text' ? `f-button-text` : `f-button`,
             buttonSize: `f-button-size-${props.size}`,
-            buttonRipple: `f-button-bg-ripple`,
+            buttonRipple: props.type === 'default' ? `f-button-dark-ripple` : `f-button-bg-ripple`,
             buttonGhostRipple: `f-button-bg-${props.type}-ghost-ripple`,
             buttonType: `f-button-bg-${props.type}${props.ghost ? '-ghost' : ''}`,
             buttonBorderType: `f-button-border-${props.radius ? 'radius' : 'default'}`,
