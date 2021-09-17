@@ -1,6 +1,6 @@
 <template>
   <app-type>基本使用</app-type>
-  <f-button>组件库从我开始</f-button>
+  <f-button>烂大街的按钮</f-button>
 
   <app-type>修改主题色</app-type>
   <div>

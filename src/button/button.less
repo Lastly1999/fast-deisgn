@@ -26,10 +26,12 @@
     border: 1px solid #ccc;
     color: rgba(0, 0, 0, 0.65);
     background-color: #fff;
+
     &::after {
       background-image: radial-gradient(circle, #ccc 10%, transparent 11%);
     }
   }
+
   // 形状
   &.circle {
     border-radius: 1.5em;
@@ -100,14 +102,17 @@
   padding: 3px 10px;
   font-size: 15px;
 }
+
 // default
 .f-button-size-default {
   padding: 5px 20px;
 }
+
 // small
 .f-button-size-small {
   padding: 7px 25px;
 }
+
 // big
 .f-button-size-big {
   padding: 9px 30px;
@@ -118,6 +123,7 @@
 .f-button-border-default {
   border-radius: 3px;
 }
+
 // 圆形边框
 .f-button-border-radius {
   border-radius: 20px;
@@ -149,35 +155,41 @@
 
   border: 1px solid #eee;
 }
+
 // type primary
 .f-button-bg-primary {
   .button-bg(@-f-button-default-font-color, @-f-button-primary-bg);
   .active-shadow(#0062cc, #3c90eb);
   .hover-shadow(#0364ccde);
 }
+
 // type error
 .f-button-bg-error {
   .button-bg(@-f-button-default-font-color, @-f-button-error-bg);
   .active-shadow(#e24d5c, #fc293ed0);
   .hover-shadow(#f30018d7);
 }
+
 // type success
 .f-button-bg-success {
   .button-bg(@-f-button-default-font-color, @-f-button-success-bg);
   .active-shadow(#0ba12e, #4fc76b);
   .hover-shadow(#0a992c);
 }
+
 // type warning
 .f-button-bg-warning {
   .button-bg(@-f-button-default-font-color, @-f-button-warning-bg);
   .active-shadow(#ffb443, #e9ae57);
   .hover-shadow(#e79e30);
 }
+
 // type text
 .f-button-text {
   box-sizing: border-box;
   display: inline-block;
   user-select: none;
+
   &:hover {
     cursor: pointer;
   }
@@ -191,6 +203,7 @@
   color: #4ba2ff;
   border: 1px solid #4ba2ff;
 }
+
 // error ghost
 .f-button-bg-error-ghost {
   .button-bg(@-f-button-dark-font-color, #fff);
@@ -198,6 +211,7 @@
   color: #ff4357d0;
   border: 1px solid #ff4357d0;
 }
+
 // default ghost
 .f-button-bg-warning-ghost {
   .button-bg(@-f-button-default-font-color, #fff);
@@ -205,6 +219,7 @@
   color: #f3ab40;
   border: 1px solid #f3ab40;
 }
+
 // success ghost
 .f-button-bg-success-ghost {
   .button-bg(@-f-button-dark-font-color, #fff);

@@ -5,17 +5,17 @@
 ### 基本使用
 
 ```html
-<f-button type='default'>组件库从我开始</f-button>
+<f-button type='default'>我真的是个烂大街的按钮</f-button>
 ```
 
 ### 主题色按钮
 
 ```html
-<f-button type='default'>默认按钮</f-button>
-<f-button type='primary'>普通样式</f-button>
-<f-button type='warning'>警告按钮</f-button>
-<f-button type='error'>错误按钮</f-button>
-<f-button type='success'>成功按钮</f-button>
+<f-button type='default'>作者预设的</f-button>
+<f-button type='primary'>很普通的type，抄袭的</f-button>
+<f-button type='warning'>也是个抄袭api的按钮</f-button>
+<f-button type='error'>借鉴(chaoxi)的error</f-button>
+<f-button type='success'>这回成功了</f-button>
 ```
 
 ## API
@@ -24,7 +24,11 @@
 
 | 参数 | 说明 | 类型 | 默认值 | 
 | --- | --- | --- | --- | 
-| `color` | 按钮颜色 | _string_ | `default` |
+| `type` | 按钮主题类型 | _TypeOptions_ | `default` |
+| `size` | 按钮尺寸 | _SizeOptions_ | `default` |
+| `ghost` | 是否为幽灵按钮 | _boolean_ | `false` |
+| `disabled` | 禁用状态 | _boolean_ | `false` |
+| `color` | 按钮颜色 按钮为type为text使用 | _string_ | `default` |
 
 ### 事件
 
