@@ -9,6 +9,7 @@
 <div align="center">
 
 一套轻量简约的 Vue3 组件库。
+</div>
 
 ## ✨ 特性
 
