@@ -10,4 +10,16 @@
 
 一套轻量简约的 Vue3 组件库。
 
-[![CI status][github-action-image]][github-action-url] [![codecov][codecov-image]][codecov-url] [![NPM version][npm-image]][npm-url] [![NPM downloads][download-image]][download-url]
+## ✨ 特性
+
+- 🌈 提炼自BootStrap类风格的Vue3组件。
+- 📦 开箱即用的高质量 Vue3 组件。
+- 🛡 使用 TypeScript 开发，提供完整的类型定义文件。
+- ⚙️ 基于varlet-cli链路开发，组件库一体管理
+- 🎨 深入每个细节的主题样式。
+
+## 🖥 兼容环境
+
+- 现代浏览器和 IE11（需要 [polyfills](https://ant.design/docs/react/getting-started-cn#兼容性)）。
+- 支持服务端渲染。
+- [Electron](https://www.electronjs.org/)
