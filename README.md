@@ -11,8 +11,9 @@
 一套轻量简约的 Vue3 组件库。
 </div>
 
-## 文档地址
-<a href="https://lastly1999.github.io/fast-deisgn/site/index.html">文档地址</a>
+## 🔗 链接
+
+- [文档地址](https://lastly1999.github.io/fast-deisgn/site/index.html)
 
 ## ✨ 特性
 
