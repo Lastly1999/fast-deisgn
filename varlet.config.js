@@ -13,56 +13,63 @@ module.exports = {
     'color-side-bar-active-background': 'rgba(203,220,255,0.46)',
     'color-app-bar': '#1d92e9',
     'color-mobile-cell-hover': '#1d92e9',
-    'color-mobile-cell-hover-background': '#fff',
+    'color-mobile-cell-hover-background': '#fff'
   },
   highlight: {
-    style: './highlight.css',
+    style: './highlight.css'
   },
   pc: {
     redirect: '/home',
     title: {
-      'zh-CN': 'FastDesign',
+      'zh-CN': 'FastDesign'
     },
     header: {
       i18n: null,
-      github: 'https://github.com/Lastly1999/fast-deisgn',
+      github: 'https://github.com/Lastly1999/fast-deisgn'
     },
     menu: [
       {
         text: {
-          'zh-CN': '开发指南',
+          'zh-CN': '开发指南'
         },
-        type: 1,
+        type: 1
       },
       {
         text: {
-          'zh-CN': '基本介绍',
+          'zh-CN': '基本介绍'
         },
         doc: 'home',
-        type: 3,
+        type: 3
       },
       {
         text: {
-          'zh-CN': '基础组件',
+          'zh-CN': '基础组件'
         },
-        type: 1,
+        type: 1
       },
       {
         text: {
-          'zh-CN': 'Button 按钮',
+          'zh-CN': 'Button 按钮'
         },
         doc: 'button',
-        type: 2,
+        type: 2
       },
-    ],
+      {
+        text: {
+          'zh-CN': 'Icon 图标'
+        },
+        doc: 'Icon',
+        type: 2
+      }
+    ]
   },
   mobile: {
     redirect: '/home',
     title: {
-      'zh-CN': '一个组件库',
+      'zh-CN': '一个组件库'
     },
     header: {
-      i18n: null,
-    },
-  },
+      i18n: null
+    }
+  }
 }

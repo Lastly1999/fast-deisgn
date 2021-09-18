@@ -1,6 +1,8 @@
 # 按钮
 
-### 引入
+```vue
+import example from '../example'
+```
 
 ### 基本使用
 
@@ -18,8 +20,10 @@
 <f-button type='success'>这回成功了</f-button>
 ```
 
-```vue
-import example from '../example'
+### 灵魂出窍
+
+```html
+<f-button ghost type='success'>人没了</f-button>
 ```
 
 ## API

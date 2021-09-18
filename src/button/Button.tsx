@@ -28,6 +28,18 @@ const BtnProps = {
     ghost: {
         type: Boolean,
         default: () => false
+    },
+    Icon: {
+        type: String,
+        default: () => ''
+    },
+    prefixIcon: {
+        type: String,
+        default: () => ''
+    },
+    suffixIcon: {
+        type: String,
+        default: () => ''
     }
 }
 
@@ -42,7 +54,8 @@ export default defineComponent({
             buttonGhostRipple: `f-button-bg-${props.type}-ghost-ripple`,
             buttonType: `f-button-bg-${props.type}${props.ghost ? '-ghost' : ''}`,
             buttonBorderType: `f-button-border-${props.radius ? 'radius' : 'default'}`,
-            buttonDisabled: `f-button-disabled`
+            buttonDisabled: props.disabled ? `f-button-bg-${props.type}-disabled` : '',
+            buttonIconColor: props.type === 'default' ? '#333' : '#fff'
         }
     },
     render() {
@@ -55,10 +68,12 @@ export default defineComponent({
             buttonDisabled,
             type,
             color,
-            disabled,
             buttonRipple,
             ghost,
-            buttonGhostRipple
+            buttonGhostRipple,
+            prefixIcon,
+            suffixIcon,
+            buttonIconColor
         } = this
         return (
           <div
@@ -71,14 +86,19 @@ export default defineComponent({
                 [
                     buttonDefault,
                     ghost ? buttonGhostRipple : buttonRipple,
-                    disabled && buttonDisabled,
+                    buttonDisabled,
                     type !== 'text' && buttonSize,
                     type !== 'text' && buttonType,
                     type !== 'text' && buttonBorderType
                 ]
             }>
+              <i class={`fa fa-${prefixIcon}`}
+                 aria-hidden='true'
+                 style={{ fontSize: 16 + 'px', color: buttonIconColor }} />
               {$slots.default && $slots.default()}
-              <span> {$slots.icon && $slots.icon()}</span>
+              <i class={`fa fa-${suffixIcon}`}
+                 aria-hidden='true'
+                 style={{ fontSize: 16 + 'px', color: buttonIconColor }} />
           </div>
         )
     }

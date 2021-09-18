@@ -7,6 +7,7 @@
 @-f-button-default-font-color: #fff;
 @-f-button-dark-font-color: #202325;
 @-f-button-primary-bg: #007bff;
+@-f-button-primary-bg-disabled: #4da4fa;
 @-f-button-success-bg: #28a745;
 @-f-button-error-bg: #eb1c30;
 @-f-button-warning-bg: #f3ab40;
@@ -230,7 +231,16 @@
 }
 
 /*************** button禁用类型 ****************/
+// type disabled default
 .f-button-bg-default-disabled {
   pointer-events: none;
+  cursor: pointer;
   .button-bg(@-f-button-default-bg, @-f-button-default-font-color);
+}
+
+// type disabled primary
+.f-button-bg-primary-disabled {
+  pointer-events: none;
+  cursor: pointer;
+  .button-bg(@-f-button-default-bg, @-f-button-primary-bg-disabled);
 }

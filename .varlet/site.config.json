@@ -40,6 +40,13 @@
         },
         "doc": "button",
         "type": 2
+      },
+      {
+        "text": {
+          "zh-CN": "Icon 图标"
+        },
+        "doc": "Icon",
+        "type": 2
       }
     ],
     "redirect": "/home",

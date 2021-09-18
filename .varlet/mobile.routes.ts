@@ -1,6 +1,10 @@
 export default [  
   {
-    path: '/button',
-    component: () => import('C:/Users/jy/fast-ui/src/button/example/index.vue')
+    path: '/Button',
+    component: () => import('C:/Users/jy/fast-ui/src/Button/example/index.vue')
+  },
+  {
+    path: '/Icon',
+    component: () => import('C:/Users/jy/fast-ui/src/Icon/example/index.vue')
   }
 ]

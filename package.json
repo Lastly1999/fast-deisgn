@@ -96,5 +96,9 @@
     "highlight",
     "types",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "@types/lodash": "^4.14.173",
+    "lodash": "^4.17.21"
+  }
 }
