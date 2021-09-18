@@ -13,7 +13,7 @@
 
 ## 🔗 链接
 
-- [文档地址](https://lastly1999.github.io/fast-deisgn/site/index.html)
+- [去预览文档](https://lastly1999.github.io/fast-deisgn/site/index.html)
 
 ## ✨ 特性
 
