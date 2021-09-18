@@ -25,7 +25,7 @@ module.exports = {
     },
     header: {
       i18n: null,
-      github: 'https://github.com/haoziqaq/varlet',
+      github: 'https://github.com/Lastly1999/fast-deisgn',
     },
     menu: [
       {
