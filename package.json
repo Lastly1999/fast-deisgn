@@ -32,7 +32,7 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@varlet/cli": "^1.19.0",
+    "@varlet/cli": "^1.20.0",
     "vue": "3.1.4"
   },
   "release-it": {

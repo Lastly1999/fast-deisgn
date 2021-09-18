@@ -18,6 +18,10 @@
 <f-button type='success'>这回成功了</f-button>
 ```
 
+```vue
+import example from '../example'
+```
+
 ## API
 
 ### 属性

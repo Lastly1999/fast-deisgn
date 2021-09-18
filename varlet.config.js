@@ -3,7 +3,7 @@ module.exports = {
   namespace: 'b',
   title: 'FastDesign',
   logo: './logo_big.png',
-  useMobile: true,
+  useMobile: false,
   themes: {
     'color-primary': '#1d92e9',
     'color-link': '#3a7afe',

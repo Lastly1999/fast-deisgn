@@ -12,7 +12,7 @@
   "analysis": {
     "baidu": ""
   },
-  "useMobile": true,
+  "useMobile": false,
   "pc": {
     "menu": [
       {

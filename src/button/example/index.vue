@@ -6,24 +6,25 @@
   <div>
     <f-button class='pad-mad' type='default'>预设按钮</f-button>
     <f-button class='pad-mad' type='primary'>标准按钮</f-button>
-  </div>
-  <div>
     <f-button class='pad-mad' type='success'>成功按钮</f-button>
     <f-button class='pad-mad' type='error'>失败按钮</f-button>
-  </div>
-  <div>
     <f-button class='pad-mad' type='warning'>警告按钮</f-button>
   </div>
   <app-type>柱状按钮(应该叫椭圆)</app-type>
   <div>
+    <f-button class='pad-mad' radius type='default'>预设按钮</f-button>
     <f-button class='pad-mad' radius type='primary'>标准按钮</f-button>
     <f-button class='pad-mad' radius type='success'>成功按钮</f-button>
+    <f-button class='pad-mad' radius type='error'>失败按钮</f-button>
+    <f-button class='pad-mad' radius type='warning'>警告按钮</f-button>
   </div>
   <app-type>灵魂按钮(中二起来了)</app-type>
   <div>
-    <f-button class='pad-mad' ghost type='primary'>灵魂按钮</f-button>
-    <f-button class='pad-mad' ghost type='success'>灵魂按钮</f-button>
-    <f-button class='pad-mad' ghost type='error'>灵魂按钮</f-button>
+    <f-button class='pad-mad' radius type='default'>灵魂按钮</f-button>
+    <f-button class='pad-mad' radius type='primary'>灵魂按钮</f-button>
+    <f-button class='pad-mad' radius type='success'>灵魂按钮</f-button>
+    <f-button class='pad-mad' radius type='error'>灵魂按钮</f-button>
+    <f-button class='pad-mad' radius type='warning'>灵魂按钮</f-button>
   </div>
 </template>
 

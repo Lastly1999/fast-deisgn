@@ -1859,10 +1859,10 @@
     "@typescript-eslint/types" "4.31.1"
     eslint-visitor-keys "^2.0.0"
 
-"@varlet/cli@^1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@varlet/cli/-/cli-1.19.0.tgz#53fe0a366b2fe7109f2994731ec578be1872a107"
-  integrity sha512-j6sJT02YlEi21FHR9D7Z/ZiTmqf/vR9fmPoXGHkJOK//Sm45+2tvbuXDPb+u0VNjR0mzThFCvrO7jXLuWVS40g==
+"@varlet/cli@^1.20.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@varlet/cli/-/cli-1.20.0.tgz#b92f28d7b7bb852e0dd7f181cf1c85b18ddf6803"
+  integrity sha512-AvyCxRMs09Ek9dWMoO8ldNWFjYuirmGji8Ezkyq0CQro1JADXTwS2ZTFH8c8rV9o5AJi/JUZvP+EgkAViRkBcg==
   dependencies:
     "@babel/core" "^7.14.8"
     "@babel/preset-env" "^7.14.8"
@@ -1872,10 +1872,10 @@
     "@release-it/conventional-changelog" "^3.3.0"
     "@varlet/eslint-config" "^1.13.0"
     "@varlet/icons" "^1.0.0"
-    "@varlet/markdown-loader" "^1.19.0"
+    "@varlet/markdown-loader" "^1.20.0"
     "@varlet/stylelint-config" "^1.9.0"
     "@varlet/touch-emulator" "^1.0.1"
-    "@varlet/ui" "^1.19.0"
+    "@varlet/ui" "^1.20.0"
     "@vue/babel-plugin-jsx" "^1.0.6"
     "@vue/compiler-sfc" "3.1.4"
     "@vue/test-utils" "^2.0.0-rc.6"
@@ -1946,10 +1946,10 @@
     fs-extra "^9.0.1"
     webfont "^9.0.0"
 
-"@varlet/markdown-loader@^1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@varlet/markdown-loader/-/markdown-loader-1.19.0.tgz#9e4f21f7daff4c2b487a34f2b0dae44334f8e76f"
-  integrity sha512-85h/CeoOxIwmZ2fs60CiAQo4NBKm7E/I6xiUJdmr382n1HZANPlo2M+RHnw2kc+bVCQB0SlALjNTVWxEW6KBGg==
+"@varlet/markdown-loader@^1.20.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@varlet/markdown-loader/-/markdown-loader-1.20.0.tgz#7cb55be468a18950072e1ed17927a3928e14201e"
+  integrity sha512-VO140oZnJn5smClH9EWUPYcVvf+wh+BLZTgBj1hC0nU0fS76/1J5xw40t1MJ5FZGFCe5iWrcNuQiHtsMTyDdDg==
   dependencies:
     highlight.js "^10.7.2"
     loader-utils "^2.0.0"
@@ -1968,10 +1968,10 @@
   resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-1.0.1.tgz#3c2fb609561ecc089be6bf748ae42610cfca8a18"
   integrity sha512-SWAZ1qzbdJcScLSD2gV5c3l8yP+IKgNMy12hYhK2d0fb6KI1L4475KMmhLpE8DN0OWUPeD5UrnMqyfjFg9MKMQ==
 
-"@varlet/ui@^1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@varlet/ui/-/ui-1.19.0.tgz#06169a24aa0b8bb991b1b2c846b9330e735823ce"
-  integrity sha512-Xv1j7lFLlzN+xtqYv4k42tFssM7IbdHrDWTuVk1YldXjqRq+7/RUUCXO+vVaQywv/3YP81mbjTqUaT7zJROaPg==
+"@varlet/ui@^1.20.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@varlet/ui/-/ui-1.20.0.tgz#4870bc11e61ef8766bd32e5a2dd2806755b5e312"
+  integrity sha512-w077y74Ozbz1z90MU9A1urkrJZ5ZdVNJUl+hbBBiG9UIWPhywl/6eR0EALucVDeUioKIVPB50D/0kahW4SFa4Q==
   dependencies:
     dayjs "^1.10.4"
     decimal.js "^10.2.1"

@@ -1,5 +1,5 @@
 import { defineComponent, PropType } from 'vue'
-import { SizeOptions, TypeOptions } from '../../types/button'
+import { SizeOptions, TypeOptions } from '../../types'
 
 import './button.less'
 
