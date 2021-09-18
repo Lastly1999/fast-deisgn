@@ -35,7 +35,7 @@
 npm install fast-design --save
 ```
 
-```vue
+```jsx
 import { createApp } from 'vue'
 import App from './App.vue'
 
