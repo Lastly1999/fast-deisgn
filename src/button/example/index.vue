@@ -65,9 +65,45 @@
   </div>
   <app-type>禁用按钮</app-type>
   <div>
+    <f-button class='pad-mad' disabled radius>
+      禁用了
+    </f-button>
     <f-button class='pad-mad' disabled radius type='primary'>
       禁用了
     </f-button>
+    <f-button class='pad-mad' disabled radius type='success'>
+      禁用了
+    </f-button>
+    <f-button class='pad-mad' disabled radius type='warning'>
+      禁用了
+    </f-button>
+    <f-button class='pad-mad' disabled radius type='error'>
+      禁用了
+    </f-button>
+  </div>
+  <div style="margin-top:10px">
+    <f-button class='pad-mad' ghost disabled>
+      禁用了
+    </f-button>
+    <f-button class='pad-mad' ghost disabled type='primary'>
+      禁用了
+    </f-button>
+    <f-button class='pad-mad' ghost disabled type='success'>
+      禁用了
+    </f-button>
+    <f-button class='pad-mad' ghost disabled type='warning'>
+      禁用了
+    </f-button>
+    <f-button class='pad-mad' ghost disabled type='error'>
+      禁用了
+    </f-button>
+  </div>
+  <app-type>不同尺寸</app-type>
+  <div>
+    <f-button class='pad-mad' size="mini" type='default' suffix-icon='hand-o-right'>迷你尺寸</f-button>
+    <f-button class='pad-mad' size="default" ghost type='primary' prefix-icon='cog'>默认尺寸</f-button>
+    <f-button class='pad-mad' size="small" ghost type='error' prefix-icon='cog'>普小尺寸</f-button>
+    <f-button class='pad-mad' size="big" ghost type='warning' prefix-icon='cog'>大杯尺寸</f-button>
   </div>
 </template>
 

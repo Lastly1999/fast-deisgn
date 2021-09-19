@@ -1,6 +1,6 @@
 module.exports = {
   name: 'FastDesign',
-  namespace: 'b',
+  namespace: 'f',
   title: 'FastDesign',
   logo: './logo_big.png',
   useMobile: false,
@@ -60,7 +60,20 @@ module.exports = {
         },
         doc: 'Icon',
         type: 2
-      }
+      },
+      {
+        text: {
+          'zh-CN': '布局组件'
+        },
+        type: 1
+      },
+      {
+        text: {
+          'zh-CN': 'Layout 布局'
+        },
+        doc: 'layout',
+        type: 2
+      },
     ]
   },
   mobile: {

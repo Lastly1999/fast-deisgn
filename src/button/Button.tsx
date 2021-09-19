@@ -54,8 +54,9 @@ export default defineComponent({
             buttonGhostRipple: `f-button-bg-${props.type}-ghost-ripple`,
             buttonType: `f-button-bg-${props.type}${props.ghost ? '-ghost' : ''}`,
             buttonBorderType: `f-button-border-${props.radius ? 'radius' : 'default'}`,
-            buttonDisabled: props.disabled ? `f-button-bg-${props.type}-disabled` : '',
-            buttonIconColor: props.type === 'default' ? '#333' : '#fff'
+            buttonDisabled: props.disabled ? !props.ghost ? `f-button-bg-${props.type}-disabled` : `f-button-bg-${props.type}-disabled-ghost` : '',
+            buttonIconColor: props.type === 'default' ? '#333' : '#fff',
+            buttonActiveOrHover: !props.disabled && `f-button-bg-${props.type}-active-hover${props.ghost ? '-ghost' : ''}`
         }
     },
     render() {
@@ -73,33 +74,28 @@ export default defineComponent({
             buttonGhostRipple,
             prefixIcon,
             suffixIcon,
-            buttonIconColor
+            disabled,
+            buttonActiveOrHover
         } = this
         return (
-          <div
-            style={
-                {
-                    color: type === 'text' && color
-                }
-            }
-            class={
-                [
-                    buttonDefault,
-                    ghost ? buttonGhostRipple : buttonRipple,
-                    buttonDisabled,
-                    type !== 'text' && buttonSize,
-                    type !== 'text' && buttonType,
-                    type !== 'text' && buttonBorderType
-                ]
-            }>
-              <i class={`fa fa-${prefixIcon}`}
-                 aria-hidden='true'
-                 style={{ fontSize: 16 + 'px', color: buttonIconColor }} />
-              {$slots.default && $slots.default()}
-              <i class={`fa fa-${suffixIcon}`}
-                 aria-hidden='true'
-                 style={{ fontSize: 16 + 'px', color: buttonIconColor }} />
-          </div>
+            <button
+                disabled={disabled}
+                style={{ color: type === 'text' && color }}
+                class={
+                    [
+                        buttonDefault,
+                        ghost ? !disabled && buttonGhostRipple : !disabled && buttonRipple,
+                        buttonDisabled,
+                        type !== 'text' && buttonSize,
+                        type !== 'text' && buttonType,
+                        type !== 'text' && buttonBorderType,
+                        buttonActiveOrHover,
+                    ]
+                }>
+                {prefixIcon && <i class={[`f-button-icon-${type}`, `fa fa-${prefixIcon}`, 'f-prefixIcon-icon']} aria-hidden='true' />}
+                {$slots.default && <span class="f-button-text-slot">{$slots.default()}</span>}
+                {suffixIcon && <i class={[`fa fa-${suffixIcon}`, 'f-suffixIcon-icon']} aria-hidden='true' />}
+            </button>
         )
     }
 })

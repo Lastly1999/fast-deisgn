@@ -1,6 +1,6 @@
 {
   "name": "FastDesign",
-  "namespace": "b",
+  "namespace": "f",
   "host": "localhost",
   "port": 8080,
   "title": "FastDesign",
@@ -46,6 +46,19 @@
           "zh-CN": "Icon 图标"
         },
         "doc": "Icon",
+        "type": 2
+      },
+      {
+        "text": {
+          "zh-CN": "布局组件"
+        },
+        "type": 1
+      },
+      {
+        "text": {
+          "zh-CN": "Layout 布局"
+        },
+        "doc": "layout",
         "type": 2
       }
     ],

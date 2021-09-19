@@ -3,14 +3,24 @@
  * @deprecated f-button 组件样式
  * @date 2021年9月13日15:03:38
  */
+
+// 自定义按钮类型背景色
 @-f-button-default-bg: #fff;
-@-f-button-default-font-color: #fff;
-@-f-button-dark-font-color: #202325;
 @-f-button-primary-bg: #007bff;
-@-f-button-primary-bg-disabled: #4da4fa;
 @-f-button-success-bg: #28a745;
 @-f-button-error-bg: #eb1c30;
 @-f-button-warning-bg: #f3ab40;
+
+// 自定义按钮类型字体色
+@-f-button-default-font-color: #fff;
+@-f-button-dark-font-color: #606266;
+
+// 自定义按钮类型禁用背景色
+@-f-button-default-bg-disabled: #ebeef5;
+@-f-button-warning-bg-disabled: #ecb868;
+@-f-button-error-bg-disabled: #e24454;
+@-f-button-primary-bg-disabled: #4da4fa;
+@-f-button-success-bg-disabled: #61b976;
 
 // 默认样式
 .f-button {
@@ -22,7 +32,7 @@
   user-select: none; // 禁止用户选中
   cursor: pointer;
   text-align: center;
-
+  position: relative;
   &.pure {
     border: 1px solid #ccc;
     color: rgba(0, 0, 0, 0.65);
@@ -81,7 +91,6 @@
   .ripple(#fff);
 }
 
-
 .f-button-bg-primary-ghost-ripple {
   .ripple(@-f-button-primary-bg);
 }
@@ -101,23 +110,49 @@
 /***************** button尺寸类型 *******************/
 // mini
 .f-button-size-mini {
-  padding: 3px 10px;
-  font-size: 15px;
+  padding: 4px 12px;
+  font-size: 13px;
+  .f-suffixIcon-icon {
+    font-size: 13px !important;
+  }
+  .f-prefixIcon-icon {
+    font-size: 13px !important;
+  }
 }
 
 // default
 .f-button-size-default {
-  padding: 5px 20px;
+  padding: 6px 20px;
+  .f-suffixIcon-icon {
+    font-size: 14px !important;
+  }
+  .f-prefixIcon-icon {
+    font-size: 14px !important;
+  }
 }
 
 // small
 .f-button-size-small {
-  padding: 7px 25px;
+  padding: 6px 21px;
+  font-size: 15px;
+  .f-suffixIcon-icon {
+    font-size: 15px !important;
+  }
+  .f-prefixIcon-icon {
+    font-size: 15px !important;
+  }
 }
 
 // big
 .f-button-size-big {
-  padding: 9px 30px;
+  padding: 6px 22px;
+  font-size: 18px;
+  .f-suffixIcon-icon {
+    font-size: 18px !important;
+  }
+  .f-prefixIcon-icon {
+    font-size: 18px !important;
+  }
 }
 
 /***************** button边框类型 *******************/
@@ -147,6 +182,7 @@
 .button-bg(@font-color, @button-bg) {
   color: @font-color;
   background-color: @button-bg;
+  border: 1px solid @button-bg;
   transition: 0.1s ease;
 }
 
@@ -154,36 +190,83 @@
 // type default
 .f-button-bg-default {
   .button-bg(@-f-button-dark-font-color, @-f-button-default-bg);
-
-  border: 1px solid #eee;
+  border: 1px solid #dcdfe6;
 }
 
 // type primary
 .f-button-bg-primary {
   .button-bg(@-f-button-default-font-color, @-f-button-primary-bg);
-  .active-shadow(#0062cc, #3c90eb);
-  .hover-shadow(#0364ccde);
 }
 
 // type error
 .f-button-bg-error {
   .button-bg(@-f-button-default-font-color, @-f-button-error-bg);
-  .active-shadow(#e24d5c, #fc293ed0);
-  .hover-shadow(#f30018d7);
 }
 
 // type success
 .f-button-bg-success {
   .button-bg(@-f-button-default-font-color, @-f-button-success-bg);
-  .active-shadow(#0ba12e, #4fc76b);
-  .hover-shadow(#0a992c);
 }
 
 // type warning
 .f-button-bg-warning {
   .button-bg(@-f-button-default-font-color, @-f-button-warning-bg);
+}
+
+// type active
+.f-button-bg-primary-active-hover {
+  .active-shadow(#0062cc, #3c90eb);
+  .hover-shadow(#0364ccde);
+}
+
+.f-button-bg-warning-active-hover {
   .active-shadow(#ffb443, #e9ae57);
   .hover-shadow(#e79e30);
+}
+.f-button-bg-success-active-hover {
+  .active-shadow(#0ba12e, #4fc76b);
+  .hover-shadow(#0a992c);
+}
+
+.f-button-bg-error-active-hover {
+  .active-shadow(#e24d5c, #fc293ed0);
+  .hover-shadow(#f30018d7);
+}
+
+// type active or hover ghost
+.f-button-bg-primary-active-hover-ghost {
+  .active-shadow(#0062cc, #3c90eb);
+  .hover-shadow(#3c90eb);
+  .ripple(#fff);
+  &:hover {
+    color: #fff !important;
+  }
+}
+
+.f-button-bg-warning-active-hover-ghost {
+  .active-shadow(#ffb443, #e9ae57);
+  .hover-shadow(#e79e30);
+  .ripple(#fff);
+  &:hover {
+    color: #fff !important;
+  }
+}
+.f-button-bg-success-active-hover-ghost {
+  .active-shadow(#0ba12e, #4fc76b);
+  .hover-shadow(#0a992c);
+  .ripple(#fff);
+  &:hover {
+    color: #fff !important;
+  }
+}
+
+.f-button-bg-error-active-hover-ghost {
+  .active-shadow(#e24d5c, #fc293ed0);
+  .hover-shadow(#f30018d7);
+  .ripple(#fff);
+  &:hover {
+    color: #fff !important;
+  }
 }
 
 // type text
@@ -233,14 +316,78 @@
 /*************** button禁用类型 ****************/
 // type disabled default
 .f-button-bg-default-disabled {
-  pointer-events: none;
-  cursor: pointer;
-  .button-bg(@-f-button-default-bg, @-f-button-default-font-color);
+  cursor: not-allowed;
+  border: 1px solid #ebeef5;
+  color: #c0c4cc;
 }
 
 // type disabled primary
 .f-button-bg-primary-disabled {
-  pointer-events: none;
-  cursor: pointer;
+  cursor: not-allowed;
   .button-bg(@-f-button-default-bg, @-f-button-primary-bg-disabled);
+}
+
+// type disabled success
+.f-button-bg-success-disabled {
+  cursor: not-allowed;
+  .button-bg(@-f-button-default-bg, @-f-button-success-bg-disabled);
+}
+
+// type disabled warning
+.f-button-bg-warning-disabled {
+  cursor: not-allowed;
+  .button-bg(@-f-button-default-bg, @-f-button-warning-bg-disabled);
+}
+
+// type disabled error
+.f-button-bg-error-disabled {
+  cursor: not-allowed;
+  .button-bg(@-f-button-default-bg, @-f-button-error-bg-disabled);
+}
+
+// button禁用类型 当类型为ghost
+
+// type disabled primary 当类型为ghost
+.f-button-bg-default-disabled-ghost {
+  cursor: not-allowed;
+  border: 1px solid #ebeef5;
+  background-color: #fff;
+  color: #c0c4cc;
+}
+
+// type disabled default 当类型为ghost
+.f-button-bg-primary-disabled-ghost {
+  cursor: not-allowed;
+  border-color: #d9ecff;
+  .button-bg(#8cc5ff, #ecf5ff);
+}
+
+// type disabled success 当类型为ghost
+.f-button-bg-success-disabled-ghost {
+  cursor: not-allowed;
+  border: 1px solid #e1f3d8;
+  .button-bg(#a4da89, #f0f9eb);
+}
+
+// type disabled warning 当类型为ghost
+.f-button-bg-warning-disabled-ghost {
+  cursor: not-allowed;
+  border: 1px solid #faecd8;
+  .button-bg(#f0c78a, #fdf6ec);
+}
+
+// type disabled error 当类型为ghost
+.f-button-bg-error-disabled-ghost {
+  cursor: not-allowed;
+  border: 1px solid #f9a7a7;
+  .button-bg(#f9a7a7, #fef0f0);
+}
+
+.f-prefixIcon-icon,
+.f-suffixIcon-icon {
+  text-align: center;
+}
+
+.f-button-text-slot {
+  margin: 0 3px;
 }
