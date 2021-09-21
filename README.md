@@ -26,7 +26,7 @@
 
 ## 🖥 兼容环境
 
-- 现代浏览器和 IE11（需要 [polyfills](https://ant.design/docs/react/getting-started-cn#兼容性)）。
+- 现代浏览器。
 - 支持服务端渲染。
 - [Electron](https://www.electronjs.org/)
 
