@@ -1,4 +1,4 @@
-# 按钮
+# Button 按钮
 
 ```vue
 import example from '../example'

@@ -1,7 +1,7 @@
-import Icon from './Icon.vue'
+import Icon from './Icon'
 import type { App } from 'vue'
 
-Icon.install = function(app: App) {
+Icon.install = function (app: App) {
   app.component(Icon.name, Icon)
 }
 

@@ -71,7 +71,14 @@ module.exports = {
         text: {
           'zh-CN': 'Layout 布局'
         },
-        doc: 'layout',
+        doc: 'Layout',
+        type: 2
+      },
+      {
+        text: {
+          'zh-CN': 'Container 布局容器'
+        },
+        doc: 'Container',
         type: 2
       },
     ]
