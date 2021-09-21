@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         text: {
-          'zh-CN': '基础组件'
+          'zh-CN': 'Components 基础组件'
         },
         type: 1
       },
@@ -63,7 +63,7 @@ module.exports = {
       },
       {
         text: {
-          'zh-CN': '布局组件'
+          'zh-CN': 'Layout 布局组件'
         },
         type: 1
       },
@@ -79,6 +79,19 @@ module.exports = {
           'zh-CN': 'Container 布局容器'
         },
         doc: 'Container',
+        type: 2
+      },
+      {
+        text: {
+          'zh-CN': 'Form 表单组件'
+        },
+        type: 1
+      },
+      {
+        text: {
+          'zh-CN': 'Input 输入框'
+        },
+        doc: 'Input',
         type: 2
       },
     ]

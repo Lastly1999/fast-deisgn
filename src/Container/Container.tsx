@@ -5,7 +5,7 @@ import "./container.less"
 export type DirectionOptions = "horizontal" | "vertical"
 
 const containerProps = {
-  direction: {
+  mode: {
     type: String as PropType<DirectionOptions>,
     default: () => "vertical"
   }
@@ -16,9 +16,9 @@ export default defineComponent({
   props: containerProps,
   setup() { },
   render() {
-    const { $slots, direction } = this
+    const { $slots, mode } = this
     return (
-      <section class={['f-container', direction === 'vertical' && 'is-vertical']}>
+      <section class={['f-container', mode === 'vertical' && 'is-vertical']}>
         {$slots.default && $slots.default()}
       </section>
     )

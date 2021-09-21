@@ -45,6 +45,16 @@ export default [
     component: () => import('D:/project/fast-deisgn/src/Footer/docs/zh-CN.md')
   },
   {
+    path: '/en-US/Form',
+    // @ts-ignore
+    component: () => import('D:/project/fast-deisgn/src/Form/docs/en-US.md')
+  },
+  {
+    path: '/zh-CN/Form',
+    // @ts-ignore
+    component: () => import('D:/project/fast-deisgn/src/Form/docs/zh-CN.md')
+  },
+  {
     path: '/en-US/Header',
     // @ts-ignore
     component: () => import('D:/project/fast-deisgn/src/Header/docs/en-US.md')
@@ -63,6 +73,16 @@ export default [
     path: '/zh-CN/Icon',
     // @ts-ignore
     component: () => import('D:/project/fast-deisgn/src/Icon/docs/zh-CN.md')
+  },
+  {
+    path: '/en-US/Input',
+    // @ts-ignore
+    component: () => import('D:/project/fast-deisgn/src/Input/docs/en-US.md')
+  },
+  {
+    path: '/zh-CN/Input',
+    // @ts-ignore
+    component: () => import('D:/project/fast-deisgn/src/Input/docs/zh-CN.md')
   },
   {
     path: '/en-US/Layout',

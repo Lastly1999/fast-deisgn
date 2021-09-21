@@ -27,7 +27,7 @@ import example from "../example"
 
 | 参数 | 说明 | 类型 | 默认值 | 
 | --- | --- | --- | --- | 
-| `type` | 子元素的排列方向	 | _horizontal/vertical_ | `horizontal` |
+| `mode` | 子元素的排列方向	 | _horizontal/vertical_ | `horizontal` |
 
 ## Aside API
 

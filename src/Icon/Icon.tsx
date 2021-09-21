@@ -23,7 +23,7 @@ export default defineComponent({
     render() {
         const { name, size, color } = this
         return (
-          <i class={`fa fa-${name}`} aria-hidden='true' style={{ fontSize: size + 'px', color: color }} />
+            <i class={`fa fa-${name}`} aria-hidden='true' style={{ fontSize: size + 'px', color: color }} />
         )
     }
 })

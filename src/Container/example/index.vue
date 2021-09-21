@@ -13,7 +13,7 @@
     <f-main class="demo-main">main</f-main>
     <f-footer class="demo-footer">footer</f-footer>
   </f-container>
-  <f-container class="demo-container" direction="horizontal">
+  <f-container class="demo-container" mode="horizontal">
     <f-aside class="demo-aside-vertical">
       aside
     </f-aside>
@@ -23,7 +23,7 @@
     <f-header class="demo-header">
       header
     </f-header>
-    <f-container class="demo-container-vertical" direction="horizontal">
+    <f-container class="demo-container-vertical" mode="horizontal">
       <f-aside class="demo-aside-vertical-2">
         aside
       </f-aside>
@@ -34,7 +34,7 @@
     <f-header class="demo-header">
       header
     </f-header>
-    <f-container class="demo-container-vertical" direction="horizontal">
+    <f-container class="demo-container-vertical" mode="horizontal">
       <f-aside width="300" class="demo-aside-vertical-2">
         aside
       </f-aside>

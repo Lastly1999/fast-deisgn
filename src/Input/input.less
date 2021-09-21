@@ -1,0 +1,94 @@
+.f-input {
+  display: inline-block;
+  position: relative;
+  input {
+    border: 1px solid #dcdfe6;
+    transition: all 0.3s ease;
+    color: #606266;
+    &:focus {
+      outline: none;
+      border: 1px solid #1d92e9 !important;
+    }
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: rgb(165, 164, 164);
+    }
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: rgb(165, 164, 164);
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: rgb(165, 164, 164);
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: rgb(165, 164, 164);
+    }
+  }
+}
+
+.f-input-trans-suffix {
+  padding-right: 25px !important;
+}
+
+.f-input-trans-prefix {
+  padding-left: 25px !important;
+}
+
+.f-input-mini {
+  padding: 4px;
+}
+
+.f-input-default {
+  padding: 7px;
+}
+
+.f-input-big {
+  padding: 9px;
+}
+
+.f-input-disabled {
+  cursor: not-allowed;
+}
+.f-input-suffix {
+  position: absolute;
+  height: 100%;
+  right: 7px;
+  align-items: center;
+  top: 0;
+  display: flex;
+  z-index: 999;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.f-input-suffix-disabled {
+  cursor: not-allowed;
+}
+
+.f-input-suffix-color {
+  color: #c0c4cc;
+}
+
+.f-input-prefix {
+  position: absolute;
+  height: 100%;
+  z-index: 999;
+  left: 7px;
+  align-items: center;
+  top: 0;
+  display: flex;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.f-input-prefix-disabled {
+  cursor: not-allowed;
+}
+
+.f-input-prefix-color {
+  color: #c0c4cc;
+}

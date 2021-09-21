@@ -20,12 +20,20 @@ export default [
     component: () => import('D:/project/fast-deisgn/src/Footer/example/index.vue')
   },
   {
+    path: '/Form',
+    component: () => import('D:/project/fast-deisgn/src/Form/example/index.vue')
+  },
+  {
     path: '/Header',
     component: () => import('D:/project/fast-deisgn/src/Header/example/index.vue')
   },
   {
     path: '/Icon',
     component: () => import('D:/project/fast-deisgn/src/Icon/example/index.vue')
+  },
+  {
+    path: '/Input',
+    component: () => import('D:/project/fast-deisgn/src/Input/example/index.vue')
   },
   {
     path: '/Layout',
