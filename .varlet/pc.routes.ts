@@ -115,6 +115,16 @@ export default [
     component: () => import('D:/project/fast-deisgn/src/Row/docs/zh-CN.md')
   },
   {
+    path: '/en-US/Select',
+    // @ts-ignore
+    component: () => import('D:/project/fast-deisgn/src/Select/docs/en-US.md')
+  },
+  {
+    path: '/zh-CN/Select',
+    // @ts-ignore
+    component: () => import('D:/project/fast-deisgn/src/Select/docs/zh-CN.md')
+  },
+  {
     path: '/zh-CN/home',
     // @ts-ignore
     component: () => import('D:/project/fast-deisgn/docs/home.zh-CN.md')

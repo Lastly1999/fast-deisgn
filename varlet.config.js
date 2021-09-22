@@ -94,6 +94,13 @@ module.exports = {
         doc: 'Input',
         type: 2
       },
+      {
+        text: {
+          'zh-CN': 'Select 选择器'
+        },
+        doc: 'Select',
+        type: 2
+      },
     ]
   },
   mobile: {

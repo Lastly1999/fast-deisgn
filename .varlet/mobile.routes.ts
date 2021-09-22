@@ -46,5 +46,9 @@ export default [
   {
     path: '/Row',
     component: () => import('D:/project/fast-deisgn/src/Row/example/index.vue')
+  },
+  {
+    path: '/Select',
+    component: () => import('D:/project/fast-deisgn/src/Select/example/index.vue')
   }
 ]
