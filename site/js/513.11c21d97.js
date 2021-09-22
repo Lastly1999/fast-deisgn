@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfast_design=self.webpackChunkfast_design||[]).push([[513],{7513:(s,e,n)=>{n.r(e),n.d(e,{default:()=>r});var t=n(6229),a={class:"varlet-site-doc"},c=(0,t.Wm)("h1",null,"Form 表单组件",-1),l=(0,t.Wm)("div",{class:"card"},[(0,t.Wm)("h3",null,"说明")],-1);const r={components:{},render:function(s,e,n,r,d,u){return(0,t.wg)(),(0,t.j4)("div",a,[c,l])}}}}]);

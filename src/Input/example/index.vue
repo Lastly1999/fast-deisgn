@@ -10,7 +10,7 @@
   <app-type>双向绑定</app-type>
   <f-input class="demo-input" size="default" placeholder="请输入内容" v-model:value="value" />
   <app-type>双向绑定的值变化</app-type>
-  <f-input class="demo-input" size="default" placeholder="请输入内容" disabled v-model:value="value" suffix-icon="address-book" />
+  <f-input class="demo-input" size="default" placeholder="请输入内容" disabled v-model:value="value"/>
   <app-type>输入框图标（后置）</app-type>
   <f-input class="demo-input" size="big" placeholder="请输入内容" suffix-icon="search" @suffix-click="suffixClick" />
   <app-type>输入框图标（前置）</app-type>

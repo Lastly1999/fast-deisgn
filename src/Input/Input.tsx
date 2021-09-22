@@ -36,21 +36,36 @@ export default defineComponent({
   props: inputProps,
   setup(props, { emit }) {
 
-    const inputChange = (event: Event) => {
+    const inputInput = (event: Event) => {
       emit('update:value', (event.target as any).value)
+      emit('input')
     }
 
     const iconClick = (type: string) => {
       emit(`${type}-click`)
     }
 
+    const inputBlur = (event: Event) => {
+      emit('blur', event)
+    }
+    const inputChange = (event: Event) => {
+      emit('change', event)
+    }
+
+    const inputFocus = (event: Event) => {
+      emit('focus', event)
+    }
+
     return {
+      inputInput,
+      inputBlur,
       inputChange,
+      inputFocus,
       iconClick
     }
   },
   render() {
-    const { placeholder, size, disabled, value, inputChange, suffixIcon, prefixIcon, iconClick } = this
+    const { placeholder, size, disabled, value, inputInput, suffixIcon, prefixIcon, iconClick, inputBlur, inputChange, inputFocus } = this
     return (
       <div class={['f-input']}>
         {
@@ -71,7 +86,11 @@ export default defineComponent({
           placeholder={placeholder}
           disabled={disabled}
           value={value}
-          onInput={inputChange} />
+          onInput={inputInput}
+          onBlur={inputBlur}
+          onChange={inputChange}
+          onFocus={inputFocus}
+        />
         {
           suffixIcon
           &&
