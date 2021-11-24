@@ -1,7 +1,7 @@
 <template>
   <app-type></app-type>
   <f-button type="primary" @click="showDialog">打开弹窗</f-button>
-  <f-dialog :visible="visible" />
+  <f-dialog v-model:visible="visible" @close="dialogClose" />
 </template>
 
 <script>
@@ -23,10 +23,15 @@ export default {
 
     const showDialog = () => {
       visible.value = true
-      console.log(visible.value)
+    }
+
+    const dialogClose = () => {
+      console.log('close')
     }
 
     return {
+      visible,
+      dialogClose,
       showDialog,
     }
   }

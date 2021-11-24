@@ -1,8 +1,14 @@
 .f-dialog-container {
-  background-color: #000;
-  opacity: 0.5;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -13,4 +19,12 @@
 .f-dialog {
   width: 50%;
   height: 50%
+}
+
+.f-dialog-content {
+  background: #fff;
+  position: relative;
+  z-index: 10000;
+  width: 40%;
+  height: 30%;
 }
