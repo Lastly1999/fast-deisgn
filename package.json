@@ -2,6 +2,7 @@
   "name": "fast-design",
   "version": "0.0.1",
   "description": "FastUi Components",
+  "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "types/index.d.ts",
   "vetur": {
@@ -19,6 +20,7 @@
     "commit": "git-cz",
     "dev": "varlet-cli dev",
     "build": "varlet-cli build",
+    "preview": "varlet-cli preview",
     "compile": "varlet-cli compile",
     "create": "varlet-cli create",
     "lint": "varlet-cli lint",
@@ -26,14 +28,15 @@
     "genAllLog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "release": "yarn compile && release-it",
     "test": "varlet-cli jest",
-    "test:watch": "varlet-cli jest -w"
+    "test:watch": "varlet-cli jest -w",
+    "test:watchAll": "varlet-cli jest -wa"
   },
   "peerDependencies": {
-    "vue": "^3.0.0"
+    "vue": "^3.2.0"
   },
   "devDependencies": {
-    "@varlet/cli": "^1.23.5",
-    "vue": "3.1.4"
+    "@varlet/cli": "^1.23.7",
+    "vue": "3.2.16"
   },
   "release-it": {
     "git": {
@@ -62,6 +65,7 @@
   "eslintConfig": {
     "root": true,
     "ignorePatterns": [
+      "lib/**",
       "es/**",
       "umd/**",
       "site/**",
@@ -78,6 +82,7 @@
       "@varlet/stylelint-config"
     ],
     "ignoreFiles": [
+      "lib/**",
       "es/**",
       "umd/**",
       "site/**",
@@ -92,13 +97,10 @@
   ],
   "files": [
     "es",
+    "lib",
     "umd",
     "highlight",
     "types",
     "README.md"
-  ],
-  "dependencies": {
-    "@types/lodash": "^4.14.173",
-    "lodash": "^4.17.21"
-  }
+  ]
 }

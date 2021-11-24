@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfast_design=self.webpackChunkfast_design||[]).push([[876],{5876:(s,e,a)=>{a.r(e),a.d(e,{default:()=>d});var n=a(8223),t=a(6618);a(1127),t.Z.render=n.s;const d=t.Z}}]);
