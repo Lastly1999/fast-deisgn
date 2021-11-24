@@ -3,6 +3,7 @@
 *.html linguist-language=TypeScript
 *.js linguist-language=TypeScript
 *.xml linguist-language=TypeScript
+*.vue linguist-language=TypeScript
 *.css linguist-language=TypeScript
 *.sql linguist-language=TypeScript
 *.uml linguist-language=TypeScript
