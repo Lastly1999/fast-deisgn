@@ -100,6 +100,12 @@ module.exports = {
         },
         doc: 'Select',
         type: 2
+      },{
+        text: {
+          'zh-CN': 'Dialog 弹出层'
+        },
+        doc: 'Dialog',
+        type: 2
       },
     ]
   },
