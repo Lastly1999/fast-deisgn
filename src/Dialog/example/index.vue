@@ -1,7 +1,13 @@
 <template>
   <app-type></app-type>
   <f-button type="primary" @click="showDialog">打开弹窗</f-button>
-  <f-dialog v-model:visible="visible" @close="dialogClose" />
+  <f-dialog v-model:visible="visible" @close="dialogClose">
+    <template #body>随便写点东西撑一撑</template>
+    <template #footer>
+      <FButton>取消</FButton>
+      <FButton type="primary" style="margin-left: 10px;">确定</FButton>
+    </template>
+  </f-dialog>
 </template>
 
 <script>

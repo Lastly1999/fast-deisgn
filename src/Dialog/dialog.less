@@ -1,30 +1,33 @@
-.f-dialog-container {
+.f-dialog-overlay {
   position: fixed;
-  top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  top: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
-
-.f-dialog-hidden {
-  display: none;
-}
-
-.f-dialog {
-  width: 50%;
-  height: 50%
-}
-
-.f-dialog-content {
+.f-dialog-wrapper {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+  border-radius: 4px;
   background: #fff;
-  position: relative;
-  z-index: 10000;
-  width: 40%;
-  height: 30%;
+}
+
+.f-dialog-header {
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.f-dialog-body {
+  padding: 15px;
+}
+
+.f-dialog-footer {
+  padding: 15px;
+  border-top: 1px solid #eee;
 }

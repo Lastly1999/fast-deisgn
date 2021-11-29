@@ -90,6 +90,13 @@
       },
       {
         "text": {
+          "zh-CN": "Feedback 反馈组件"
+        },
+        "doc": "feekback",
+        "type": 1
+      },
+      {
+        "text": {
           "zh-CN": "Dialog 弹出层"
         },
         "doc": "Dialog",

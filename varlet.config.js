@@ -100,7 +100,14 @@ module.exports = {
         },
         doc: 'Select',
         type: 2
-      },{
+      }, {
+        text: {
+          'zh-CN': 'Feedback 反馈组件'
+        },
+        doc: 'feekback',
+        type: 1
+      },
+      {
         text: {
           'zh-CN': 'Dialog 弹出层'
         },

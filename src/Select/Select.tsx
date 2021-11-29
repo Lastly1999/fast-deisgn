@@ -1,4 +1,4 @@
-import { defineComponent, PropType } from "vue"
+import { defineComponent, PropType, ref } from "vue"
 
 import "./select.less"
 
@@ -8,21 +8,39 @@ const selectProps = {
   size: {
     type: String as PropType<SelectSizeOptions>,
     default: () => "default"
+  },
+  placeholder: {
+    type: String,
+    default: () => "请选择"
   }
 }
 
 export default defineComponent({
   name: "FSelect",
   props: selectProps,
+  setup() {
+
+    const show = ref(false)
+
+    const showSelectPicker = (event: MouseEvent) => {
+      console.log(event)
+
+    }
+
+    return {
+      show,
+      showSelectPicker
+    }
+  },
   render() {
-    const { size } = this
+    const { size, placeholder, showSelectPicker, show } = this
     return (
-      <select class={['f-select', `f-select-${size}`]}>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="opel">Opel</option>
-        <option value="audi">Audi</option>
-      </select>
+      <>
+        <div class={['f-select-content']}>
+          <input class={['f-select', `f-select-${size}`]} readonly placeholder={placeholder} onClick={showSelectPicker} />
+          <div class={['f-select-list']}>asdasd</div>
+        </div>
+      </>
     )
   }
 })
