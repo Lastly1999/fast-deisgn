@@ -1,0 +1,1 @@
+import{_ as e}from"./elevation.7bc18672.js";import{o,c as s,a as t}from"./vendor.f662e34d.js";const c={components:{}},n={class:"varlet-site-doc"},a=t("h1",null,"\u56FE\u6807",-1),r=[a];function _(d,i,p,l,f,m){return o(),s("div",n,r)}var v=e(c,[["render",_]]);export{v as default};

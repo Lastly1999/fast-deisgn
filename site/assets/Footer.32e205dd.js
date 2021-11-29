@@ -1,0 +1,1 @@
+import{q as o,h as r}from"./vendor.f662e34d.js";const s={height:{type:[String,Number],default:()=>"50"}};var a=o({name:"FFooter",props:s,render(){const{$slots:e,height:t}=this;return r("footer",{style:{height:`${t}px`}},[e.default&&e.default()])}});export{a as F};

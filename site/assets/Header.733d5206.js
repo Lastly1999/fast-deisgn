@@ -1,0 +1,1 @@
+import{q as t,h as a}from"./vendor.f662e34d.js";const d={height:{type:[String,Number],default:()=>"60"}};var s=t({name:"FHeader",props:d,render(){const{$slots:e,height:r}=this;return a("header",{style:{height:`${r}px`}},[e.default&&e.default()])}});export{s as H};

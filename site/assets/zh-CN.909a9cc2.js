@@ -1,0 +1,1 @@
+import{_ as o}from"./elevation.7bc18672.js";import{o as s,c as t,a as e}from"./vendor.f662e34d.js";const c={components:{}},a={class:"varlet-site-doc"},n=e("h1",null,"Form \u8868\u5355\u7EC4\u4EF6",-1),r=e("div",{class:"card"},[e("h3",null,"\u8BF4\u660E")],-1),_=[n,r];function d(i,l,p,f,h,m){return s(),t("div",a,_)}var $=o(c,[["render",d]]);export{$ as default};

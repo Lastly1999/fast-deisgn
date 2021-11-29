@@ -1,0 +1,1 @@
+import{q as t,h as d}from"./vendor.f662e34d.js";const a={width:{type:[Number,String],default:()=>"200"}};var i=t({name:"FAside",props:a,render(){const{$slots:e,width:s}=this;return d("aside",{class:["f-aside"],style:{width:`${s}px`}},[e.default&&e.default()])}});export{i as A};
